@@ -49,11 +49,35 @@ cmake_ninja_workdir = C$:/Users/ALEJANDRO/POO/BattleArena/cmake-build-debug/
 
 build cmake_object_order_depends_target_BattleArena: phony || .
 
-build CMakeFiles/BattleArena.dir/main.cpp.obj: CXX_COMPILER__BattleArena_unscanned_Debug C$:/Users/ALEJANDRO/POO/BattleArena/main.cpp || cmake_object_order_depends_target_BattleArena
-  DEP_FILE = CMakeFiles\BattleArena.dir\main.cpp.obj.d
+build CMakeFiles/BattleArena.dir/src/main.cpp.obj: CXX_COMPILER__BattleArena_unscanned_Debug C$:/Users/ALEJANDRO/POO/BattleArena/src/main.cpp || cmake_object_order_depends_target_BattleArena
+  DEP_FILE = CMakeFiles\BattleArena.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\BattleArena.dir
-  OBJECT_FILE_DIR = CMakeFiles\BattleArena.dir
+  OBJECT_FILE_DIR = CMakeFiles\BattleArena.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BattleArena.dir\
+  TARGET_PDB = BattleArena.pdb
+
+build CMakeFiles/BattleArena.dir/src/Videojuego.cpp.obj: CXX_COMPILER__BattleArena_unscanned_Debug C$:/Users/ALEJANDRO/POO/BattleArena/src/Videojuego.cpp || cmake_object_order_depends_target_BattleArena
+  DEP_FILE = CMakeFiles\BattleArena.dir\src\Videojuego.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BattleArena.dir
+  OBJECT_FILE_DIR = CMakeFiles\BattleArena.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BattleArena.dir\
+  TARGET_PDB = BattleArena.pdb
+
+build CMakeFiles/BattleArena.dir/src/Jugador.cpp.obj: CXX_COMPILER__BattleArena_unscanned_Debug C$:/Users/ALEJANDRO/POO/BattleArena/src/Jugador.cpp || cmake_object_order_depends_target_BattleArena
+  DEP_FILE = CMakeFiles\BattleArena.dir\src\Jugador.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BattleArena.dir
+  OBJECT_FILE_DIR = CMakeFiles\BattleArena.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BattleArena.dir\
+  TARGET_PDB = BattleArena.pdb
+
+build CMakeFiles/BattleArena.dir/src/Torneo.cpp.obj: CXX_COMPILER__BattleArena_unscanned_Debug C$:/Users/ALEJANDRO/POO/BattleArena/src/Torneo.cpp || cmake_object_order_depends_target_BattleArena
+  DEP_FILE = CMakeFiles\BattleArena.dir\src\Torneo.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BattleArena.dir
+  OBJECT_FILE_DIR = CMakeFiles\BattleArena.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\BattleArena.dir\
   TARGET_PDB = BattleArena.pdb
 
@@ -65,7 +89,7 @@ build CMakeFiles/BattleArena.dir/main.cpp.obj: CXX_COMPILER__BattleArena_unscann
 #############################################
 # Link the executable BattleArena.exe
 
-build BattleArena.exe: CXX_EXECUTABLE_LINKER__BattleArena_Debug CMakeFiles/BattleArena.dir/main.cpp.obj
+build BattleArena.exe: CXX_EXECUTABLE_LINKER__BattleArena_Debug CMakeFiles/BattleArena.dir/src/main.cpp.obj CMakeFiles/BattleArena.dir/src/Videojuego.cpp.obj CMakeFiles/BattleArena.dir/src/Jugador.cpp.obj CMakeFiles/BattleArena.dir/src/Torneo.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\BattleArena.dir
